@@ -7,38 +7,41 @@
     <title>Form</title>
 </head>
 
-<body>
-    <div>
-        <button type="button">Login</button>
-        <button type="button">Register</button>
-    </div>
-    <form action="#" method="post">
-        <fieldset>
-            <legend>Enter your email and password to register</legend>
-            <p>
-                <input type="text" name="username" placeholder="Username">
+<body class="body">
+    <div class="popup">
+        <div>
+            <button type="button" class="butt-log">Login</button>
+            <button type="button" class="butt-reg">Register</button>
+        </div>
+        <form action="#" method="post">
+            <fieldset>
+                <legend class="title">Enter your email and password to register</legend>
+            <div class="form"> 
+                    <p>
+                        <input type="text" name="username"  placeholder="Username">
+                    </p>
+                    <p>
+                        <input type="email" name="email"  placeholder="Enter your email address">
+                    </p>
+                    <p>
+                        <input type="password" name="password"  placeholder="Password">
+                    </p>
+                    <p>
+                        <input type="password" name="confirm_password"  placeholder="Confirm Password">
+                    </p>
+                </div>
+            </fieldset>
+            <p class="reg">
+                <input type="submit" value="Register">
             </p>
-            <p>
-                <input type="email" name="email" placeholder="Enter your email address">
+            <p class="choice">Or register with</p>
+            <p class="google">
+               <button type="button" >Continue with Google</button>
             </p>
-            <p>
-                <input type="password" name="password" placeholder="Password">
+            <p class="facebook">
+                <button type="button" >Continue with Facebook</button>
             </p>
-            <p>
-                <input type="password" name="confirm_password" placeholder="Confirm Password">
-            </p>
-        </fieldset>
-        <p>
-            <input type="submit" value="Register">
-        </p>
-        <p>Or register with</p>
-        <p>
-        
-            <button type="button">Continue with Google</button>
-        </p>
-        <p>
-            <button type="button">Continue with Facebook</button>
-        </p>
+        </div>
     </form>
 </body>
 
